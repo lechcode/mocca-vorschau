@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
   MOCCA Mode Cult Secondhand · Landsberg am Lech
-  DESIGN-VORSCHAU · Richtung B „Wild Heart" — V2 (bildschirmfüllende Strahlen + Retro-Dunkellila) · Lechcode · Single-File, kein Build
+  DESIGN-VORSCHAU · Richtung B „Wild Heart" — V3 (Logo-Farben: Türkis · Gold · Beere) · Lechcode · Single-File, kein Build
   KALT-Demo: Texte neu aus Fakten der Altseite. Bilder: Marions eigene Fotos (Rechte vor Go-Live klären).
   [KLÄREN] = noch von Marion zu bestätigen. noindex bis Beauftragung + Rechtsseiten + Freigabe.
 -->
@@ -13,7 +13,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>MOCCA · Mode Cult Secondhand — Landsberg am Lech</title>
 <meta name="description" content="MOCCA Mode Cult Secondhand: der absolut andere Secondhand-Laden — Vorbeikommen, Wohlfühlen, Stöbern. Ständig neu, von No-Name bis Designer. Jetzt mitten in der Landsberger Altstadt.">
-<meta name="theme-color" content="#271528">
+<meta name="theme-color" content="#0E4A4A">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="MOCCA Mode Cult Secondhand">
@@ -33,10 +33,10 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --creme:#FBF1DF; --creme2:#F8E7C8; --paper:#FFFBF3;
-  --aubergine:#2A1846; --aub2:#3d2560;
+  --aubergine:#0E4A4A; --aub2:#136262;
   --ink:#2A1622; --ink-soft:#6E5360;
-  --terracotta:#D9542B; --terra-deep:#A53A18; --mandarine:#F2913D;
-  --magenta:#6E3CA0; --magenta-deep:#572E84; --petrol:#1E6E63; --gold:#E4B14C; --gold-deep:#8C610F;
+  --terracotta:#9A6F1E; --terra-deep:#7C5410; --mandarine:#E3B24C;
+  --magenta:#A6285A; --magenta-deep:#7E1E42; --petrol:#0E7373; --gold:#E4B14C; --gold-deep:#8C610F;
   --line:rgba(42,22,34,.14); --line-strong:rgba(42,22,34,.24);
   --display:'Space Grotesk',Arial,sans-serif;
   --head:'Shrikhand',Georgia,serif;
@@ -69,12 +69,12 @@ picture{display:block}
 .sec-head{max-width:60ch}
 .sec-head h2{font-size:var(--h2);margin:.18em 0 .45em}
 .sec-head p{font-size:var(--s1);color:var(--ink-soft)}
-:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(194,64,122,.55);border-radius:6px}
+:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(166,40,90,.55);border-radius:6px}
 
 .btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--display);font-weight:700;font-size:16px;padding:15px 28px;border-radius:var(--r-pill);min-height:50px;border:2px solid transparent;cursor:pointer;transition:transform .22s var(--ease),background .22s,color .22s,border-color .22s,box-shadow .22s}
 .btn .ar{transition:transform .22s var(--ease)}.btn:hover .ar{transform:translateX(3px)}
-.btn-primary{background:linear-gradient(180deg,#F4A052,var(--terracotta));color:#2A1622;box-shadow:0 12px 26px -12px rgba(217,84,43,.7),inset 0 1px 0 rgba(255,228,190,.6)}
-.btn-primary:hover{transform:translateY(-2px);text-decoration:none;color:#2A1622;box-shadow:0 18px 34px -14px rgba(217,84,43,.8),inset 0 1px 0 rgba(255,228,190,.6)}
+.btn-primary{background:linear-gradient(180deg,#0F8484,#0B5C5C);color:#fff;box-shadow:0 12px 26px -12px rgba(12,92,92,.6),inset 0 1px 0 rgba(255,255,255,.18)}
+.btn-primary:hover{transform:translateY(-2px);text-decoration:none;color:#fff;box-shadow:0 18px 34px -14px rgba(12,92,92,.7),inset 0 1px 0 rgba(255,255,255,.18)}
 .btn-ghost{border-color:var(--line-strong);color:var(--ink)}
 .btn-ghost:hover{border-color:var(--aubergine);color:var(--aubergine);transform:translateY(-2px);text-decoration:none}
 .btn-light{background:var(--creme);color:var(--aubergine)}
@@ -100,20 +100,20 @@ picture{display:block}
 
 /* HERO */
 .hero{position:relative;overflow:hidden;text-align:center;padding-top:clamp(130px,20vh,210px);padding-bottom:clamp(40px,7vw,80px);
-  background:linear-gradient(180deg,#FBD9A4 0%,#FBE6C4 30%,var(--creme) 70%)}
+  background:linear-gradient(180deg,#F4E7C4 0%,#F8EFD7 32%,var(--creme) 70%)}
 .sun-rays,.sun-core{position:absolute;left:50%;top:clamp(120px,22vh,260px);transform:translate(-50%,-50%);pointer-events:none;z-index:0}
 .sun-rays{width:240vmax;height:240vmax;
-  background:repeating-conic-gradient(from 0deg, rgba(242,145,61,.46) 0deg 5deg, rgba(242,145,61,0) 5deg 13deg);
+  background:repeating-conic-gradient(from 0deg, rgba(198,148,48,.5) 0deg 5deg, rgba(198,148,48,0) 5deg 13deg);
   -webkit-mask:radial-gradient(circle, transparent 3%, #000 6%, #000 72%, transparent 86%);
   mask:radial-gradient(circle, transparent 3%, #000 6%, #000 72%, transparent 86%);
   animation:spin 140s linear infinite}
 .sun-core{width:min(46vw,220px);aspect-ratio:1;border-radius:50%;
-  background:radial-gradient(circle at 50% 42%,#FBD27A 0%,#F2913D 46%,#D9542B 100%);
-  box-shadow:0 0 60px -6px rgba(242,145,61,.6)}
+  background:radial-gradient(circle at 50% 42%,#FCE9B0 0%,#E3B24C 46%,#C0922E 100%);
+  box-shadow:0 0 60px -6px rgba(198,148,48,.5)}
 @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
 .hero-in{position:relative;z-index:1;max-width:900px;margin-inline:auto}
 .hero h1{font-size:var(--h1);margin:.12em 0 .3em;letter-spacing:-.03em}
-.hero h1 .pop{color:var(--terracotta)}
+.hero h1 .pop{color:var(--magenta)}
 .hero .lede{max-width:40ch;margin-inline:auto}
 .hero-cta{display:flex;flex-wrap:wrap;gap:13px;justify-content:center;margin-top:30px}
 .hero-tags{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px 10px;justify-content:center}
@@ -131,7 +131,7 @@ picture{display:block}
 @keyframes slide{to{transform:translateX(-50%)}}
 
 /* UMZUG */
-.umzug{background:radial-gradient(70vmax 50vmax at 80% -10%,rgba(120,70,170,.34),transparent 60%),radial-gradient(60vmax 50vmax at 5% 120%,rgba(30,110,99,.34),transparent 60%),var(--aubergine);color:var(--creme);text-align:center;overflow:hidden}
+.umzug{background:radial-gradient(70vmax 50vmax at 80% -10%,rgba(166,40,90,.32),transparent 60%),radial-gradient(60vmax 50vmax at 5% 120%,rgba(30,110,99,.34),transparent 60%),var(--aubergine);color:var(--creme);text-align:center;overflow:hidden}
 .umzug .wrap{position:relative;z-index:1;max-width:780px}
 .umzug .eyebrow{color:var(--gold)}
 .umzug h2{color:#fff;font-size:var(--h2);margin:.12em 0 .4em}
@@ -144,11 +144,11 @@ picture{display:block}
 
 /* SORTIMENT */
 .karten{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,30px);margin-top:46px}
-.karte{background:var(--paper);border:2px solid var(--aubergine);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:6px 8px 0 rgba(39,21,40,.9);transition:transform .26s var(--ease),box-shadow .26s var(--ease)}
+.karte{background:var(--paper);border:2px solid var(--aubergine);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:6px 8px 0 rgba(10,58,58,.9);transition:transform .26s var(--ease),box-shadow .26s var(--ease)}
 .karte:nth-child(1){transform:rotate(-1.4deg)}
 .karte:nth-child(2){transform:rotate(1deg)}
 .karte:nth-child(3){transform:rotate(-.8deg)}
-.js .karte:hover{transform:rotate(0) translateY(-4px);box-shadow:10px 14px 0 rgba(39,21,40,.92)}
+.js .karte:hover{transform:rotate(0) translateY(-4px);box-shadow:10px 14px 0 rgba(10,58,58,.92)}
 .karte figure{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--creme2)}
 .karte figure picture{display:block;width:100%;height:100%}
 .karte img{width:100%;height:100%;object-fit:cover}
@@ -164,7 +164,7 @@ picture{display:block}
 /* KOMMISSION */
 .komm{background:var(--creme2)}
 .komm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,3vw,28px);margin-top:42px;counter-reset:c}
-.kstep{background:var(--paper);border:2px solid var(--aubergine);border-radius:var(--r-lg);padding:clamp(22px,2.4vw,30px);position:relative;box-shadow:5px 6px 0 rgba(39,21,40,.9)}
+.kstep{background:var(--paper);border:2px solid var(--aubergine);border-radius:var(--r-lg);padding:clamp(22px,2.4vw,30px);position:relative;box-shadow:5px 6px 0 rgba(10,58,58,.9)}
 .kstep::before{counter-increment:c;content:counter(c);position:absolute;top:-20px;left:24px;width:42px;height:42px;border-radius:50%;background:var(--terracotta);color:#2A1622;font-family:var(--display);font-weight:700;font-size:20px;display:grid;place-items:center;border:2px solid var(--aubergine)}
 .kstep:nth-child(2)::before{background:var(--magenta);color:#fff}
 .kstep:nth-child(3)::before{background:var(--petrol);color:#fff}
@@ -204,13 +204,13 @@ picture{display:block}
 .mapcard .map-attrib a{color:#2a1622;text-decoration:underline;font-weight:500}
 
 /* FOOTER */
-.mfoot{background:#1C0F33;color:#cdb9c6;padding-block:clamp(44px,6vw,64px) 28px;font-size:14.5px}
+.mfoot{background:#0A3838;color:#bcccc9;padding-block:clamp(44px,6vw,64px) 28px;font-size:14.5px}
 .mfoot .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.14)}
 .mfoot .brand b{color:#fff;font-family:var(--display);font-size:22px}
-.mfoot p{color:#b79fae}
-.mfoot h4{font-family:var(--display);font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:#b79fae;margin-bottom:13px;font-weight:700}
-.mfoot ul{list-style:none;display:grid;gap:9px}.mfoot a{color:#cdb9c6}.mfoot a:hover{color:#fff}
-.mfoot .foot-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:22px;color:#9d8294}
+.mfoot p{color:#97b0ad}
+.mfoot h4{font-family:var(--display);font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:#97b0ad;margin-bottom:13px;font-weight:700}
+.mfoot ul{list-style:none;display:grid;gap:9px}.mfoot a{color:#bcccc9}.mfoot a:hover{color:#fff}
+.mfoot .foot-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:22px;color:#7fa09c}
 .mfoot .made{color:var(--gold)}
 
 /* STICKY */
@@ -284,8 +284,8 @@ picture{display:block}
 <!-- UMZUG -->
 <section class="sec umzug" id="umzug">
   <svg class="star" style="left:8%;top:22%;width:34px" viewBox="0 0 24 24" fill="#E4B14C" aria-hidden="true"><path d="M12 2l2.4 6.9L21 9.3l-5.4 4.2 2 6.9L12 16.8 6.4 20.4l2-6.9L3 9.3l6.6-.4z"/></svg>
-  <svg class="star" style="right:10%;top:30%;width:22px" viewBox="0 0 24 24" fill="#C2407A" aria-hidden="true"><path d="M12 2l2.4 6.9L21 9.3l-5.4 4.2 2 6.9L12 16.8 6.4 20.4l2-6.9L3 9.3l6.6-.4z"/></svg>
-  <svg class="star" style="right:18%;bottom:18%;width:30px" viewBox="0 0 24 24" fill="#1E6E63" aria-hidden="true"><path d="M12 2l2.4 6.9L21 9.3l-5.4 4.2 2 6.9L12 16.8 6.4 20.4l2-6.9L3 9.3l6.6-.4z"/></svg>
+  <svg class="star" style="right:10%;top:30%;width:22px" viewBox="0 0 24 24" fill="#A6285A" aria-hidden="true"><path d="M12 2l2.4 6.9L21 9.3l-5.4 4.2 2 6.9L12 16.8 6.4 20.4l2-6.9L3 9.3l6.6-.4z"/></svg>
+  <svg class="star" style="right:18%;bottom:18%;width:30px" viewBox="0 0 24 24" fill="#0E7373" aria-hidden="true"><path d="M12 2l2.4 6.9L21 9.3l-5.4 4.2 2 6.9L12 16.8 6.4 20.4l2-6.9L3 9.3l6.6-.4z"/></svg>
   <div class="wrap reveal">
     <p class="eyebrow">Wir sind umgezogen</p>
     <h2>Neu. Größer. Mittendrin.</h2>
@@ -403,7 +403,7 @@ picture{display:block}
         <div class="af-line"><span class="ic" aria-hidden="true">✉</span><div><span class="lab">E-Mail</span><a class="v" href="mailto:mocca.landsberg@web.de">mocca.landsberg@web.de</a></div></div>
         <div class="af-line"><span class="ic" aria-hidden="true">◷</span><div><span class="lab">Öffnungszeiten</span>
           <div class="zeiten"><b>Mo</b><span>14–18 Uhr</span><b>Di–Fr</b><span>10–13 &amp; 14–18 Uhr</span><b>Sa</b><span>10–14 Uhr</span></div>
-          <span class="v" style="display:block;margin-top:6px;font-size:12.5px;color:#b79fae">Zeiten bitte vor dem Besuch kurz prüfen.</span>
+          <span class="v" style="display:block;margin-top:6px;font-size:12.5px;color:#97b0ad">Zeiten bitte vor dem Besuch kurz prüfen.</span>
         </div></div>
       </div>
       <figure class="mapcard reveal" aria-label="Lage von MOCCA in der Landsberger Altstadt">
