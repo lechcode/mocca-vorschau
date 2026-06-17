@@ -193,12 +193,15 @@ picture{display:block}
 .af-line .v{font-size:15.5px;color:var(--creme);line-height:1.55}.af-line a{color:#fff}
 .zeiten{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;font-size:15px;color:var(--creme)}
 .zeiten b{color:#fff;font-weight:700}
-.mapcard{position:relative;aspect-ratio:4/3;border-radius:var(--r-lg);overflow:hidden;border:3px solid var(--gold);box-shadow:8px 10px 0 rgba(0,0,0,.35);background:linear-gradient(135deg,#2a7e72,#155a51)}
-.mapcard .streets{position:absolute;inset:0;opacity:.5}
-.mapcard .pin{position:absolute;left:50%;top:48%;transform:translate(-50%,-100%);z-index:2}
+.mapcard{position:relative;aspect-ratio:4/3;border-radius:var(--r-lg);overflow:hidden;border:3px solid var(--gold);box-shadow:8px 10px 0 rgba(0,0,0,.35);background:#e9e3d6}
+.mapcard .mapimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.mapcard .map-link{position:absolute;inset:0;z-index:1}
+.mapcard .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);z-index:3;pointer-events:none}
 .mapcard .pin svg{width:48px;height:48px;filter:drop-shadow(0 5px 7px rgba(0,0,0,.5))}
-.mapcard .maps-btn{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:inline-flex;align-items:center;gap:.45em;background:var(--gold);color:var(--aubergine);font-family:var(--display);font-weight:700;font-size:13.5px;padding:10px 18px;border-radius:var(--r-pill);box-shadow:0 8px 20px -8px rgba(0,0,0,.5);white-space:nowrap;transition:transform .25s,background .25s}
-.mapcard .maps-btn:hover{transform:translateX(-50%) translateY(-2px);text-decoration:none;background:#eec265}
+.mapcard .maps-btn{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:inline-flex;align-items:center;gap:.45em;background:var(--gold);color:var(--aubergine);font-family:var(--display);font-weight:700;font-size:13.5px;padding:10px 18px;border-radius:var(--r-pill);box-shadow:0 8px 20px -8px rgba(0,0,0,.5);white-space:nowrap;z-index:3;pointer-events:none;transition:transform .25s,background .25s}
+.mapcard:hover .maps-btn{transform:translateX(-50%) translateY(-2px);background:#eec265}
+.mapcard .map-attrib{position:absolute;right:7px;top:7px;z-index:4;font-family:var(--display);font-size:10px;line-height:1;color:#2a1622;background:rgba(251,241,223,.85);padding:3px 7px;border-radius:7px}
+.mapcard .map-attrib a{color:#2a1622;text-decoration:underline;font-weight:500}
 
 /* FOOTER */
 .mfoot{background:#1c0f1e;color:#cdb9c6;padding-block:clamp(44px,6vw,64px) 28px;font-size:14.5px}
@@ -404,9 +407,15 @@ picture{display:block}
         </div></div>
       </div>
       <figure class="mapcard reveal" aria-label="Lage von MOCCA in der Landsberger Altstadt">
-        <svg class="streets" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#FBF1DF" stroke-width="3" opacity="0.5"><path d="M-20 90 L420 70"/><path d="M-20 200 L420 220"/><path d="M120 -20 L150 320"/><path d="M260 -20 L240 320"/><path d="M40 -20 L70 320"/></g></svg>
+        <picture>
+          <source type="image/avif" srcset="assets/img/karte.avif">
+          <source type="image/webp" srcset="assets/img/karte.webp">
+          <img class="mapimg" src="assets/img/karte.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Karte: Standort von MOCCA in der Vorderen Mühlgasse in der Landsberger Altstadt">
+        </picture>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Vordere+M%C3%BChlgasse+189+86899+Landsberg+am+Lech" target="_blank" rel="noopener" aria-label="Standort von MOCCA auf Google Maps öffnen"></a>
         <span class="pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Z" fill="#E4B14C" stroke="#271528" stroke-width="1.5"/><circle cx="12" cy="9" r="2.4" fill="#271528"/></svg></span>
-        <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Vordere+M%C3%BChlgasse+189+86899+Landsberg+am+Lech" target="_blank" rel="noopener">Auf Google&nbsp;Maps öffnen ↗</a>
+        <span class="maps-btn">Auf Google&nbsp;Maps öffnen ↗</span>
+        <small class="map-attrib">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></small>
       </figure>
     </div>
   </div>
