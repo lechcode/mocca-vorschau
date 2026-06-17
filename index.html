@@ -150,6 +150,7 @@ picture{display:block}
 .karte:nth-child(3){transform:rotate(-.8deg)}
 .js .karte:hover{transform:rotate(0) translateY(-4px);box-shadow:10px 14px 0 rgba(39,21,40,.92)}
 .karte figure{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--creme2)}
+.karte figure picture{display:block;width:100%;height:100%}
 .karte img{width:100%;height:100%;object-fit:cover}
 .karte .tab{position:absolute;left:12px;top:12px;font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.04em;color:#fff;padding:6px 12px;border-radius:var(--r-pill)}
 .karte:nth-child(1) .tab{background:var(--terracotta)}
@@ -337,9 +338,9 @@ picture{display:block}
         <figure>
           <span class="tab">Schuhe</span>
           <picture>
-            <source type="image/avif" srcset="assets/img/schuhe-600.avif 600w, assets/img/schuhe-900.avif 900w" sizes="(max-width:900px) 92vw, 340px">
-            <source type="image/webp" srcset="assets/img/schuhe-600.webp 600w, assets/img/schuhe-900.webp 900w" sizes="(max-width:900px) 92vw, 340px">
-            <img src="assets/img/schuhe-900.jpg" width="1400" height="894" loading="lazy" decoding="async" alt="Hochwertige Lederstiefel im MOCCA Secondhand-Laden">
+            <source type="image/avif" srcset="assets/img/schuhe-480.avif 480w, assets/img/schuhe-720.avif 720w" sizes="(max-width:900px) 92vw, 340px">
+            <source type="image/webp" srcset="assets/img/schuhe-480.webp 480w, assets/img/schuhe-720.webp 720w" sizes="(max-width:900px) 92vw, 340px">
+            <img src="assets/img/schuhe-720.jpg" width="1046" height="1308" loading="lazy" decoding="async" alt="Hochwertige Lederstiefel im MOCCA Secondhand-Laden">
           </picture>
         </figure>
         <div class="karte-body">
@@ -372,7 +373,11 @@ picture{display:block}
 <section class="sec" id="ueber">
   <div class="wrap ueber-grid">
     <figure class="ueber-fig reveal">
-      <img src="assets/img/marion-720.jpg" width="1000" height="1250" loading="lazy" decoding="async" alt="Marion, Inhaberin von MOCCA, in ihrem Laden">
+      <picture>
+        <source type="image/avif" srcset="assets/img/marion-480.avif 480w, assets/img/marion-720.avif 720w" sizes="(max-width:900px) 260px, 380px">
+        <source type="image/webp" srcset="assets/img/marion-480.webp 480w, assets/img/marion-720.webp 720w" sizes="(max-width:900px) 260px, 380px">
+        <img src="assets/img/marion-720.jpg" width="720" height="900" loading="lazy" decoding="async" alt="Marion, Inhaberin von MOCCA, in ihrem Laden">
+      </picture>
     </figure>
     <div class="ueber-text reveal">
       <p class="eyebrow">Hinter MOCCA</p>
