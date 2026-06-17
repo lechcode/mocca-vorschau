@@ -87,13 +87,13 @@ picture{display:block}
 .nav.scrolled .burger span{background:var(--creme)}
 .brand{display:flex;align-items:center;gap:9px}
 .brand .logo{height:34px;width:auto;display:block}
-.brand b{font-family:var(--display);font-weight:700;font-size:23px;letter-spacing:.02em;color:var(--ink)}
+.brand b{font-family:var(--display);font-weight:700;font-size:23px;letter-spacing:.02em;color:#FCEFD2}
 .navlinks{display:flex;align-items:center;gap:28px}
-.navlinks a:not(.btn){font-family:var(--display);font-size:15px;font-weight:500;color:var(--ink)}
-.navlinks a:not(.btn):hover{text-decoration:none;color:var(--terra-deep)}
+.navlinks a:not(.btn){font-family:var(--display);font-size:15px;font-weight:500;color:#FCEFD2}
+.navlinks a:not(.btn):hover{text-decoration:none;color:var(--gold)}
 .nav.scrolled .navlinks a:not(.btn):hover{color:var(--gold)}
 .burger{display:none;width:46px;height:46px;border:2px solid var(--line-strong);border-radius:12px;background:none;cursor:pointer;flex-direction:column;justify-content:center;gap:5px}
-.burger span{height:2px;width:20px;background:var(--ink);margin-inline:auto;transition:.3s}
+.burger span{height:2px;width:20px;background:#FCEFD2;margin-inline:auto;transition:.3s}
 .menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .menu-open .burger span:nth-child(2){opacity:0}
 .menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
@@ -135,24 +135,24 @@ picture{display:block}
 .wave{display:block;width:100%;height:auto}
 
 /* MARQUEE */
-.marquee{background:var(--aubergine);color:var(--creme);overflow:hidden;padding:16px 0;border-block:0}
+.marquee{background:linear-gradient(90deg,#0E9C92,#7A3FD0,#C81E6E,#D2541C,#7A3FD0,#0E9C92);background-size:220% 100%;color:#fff;overflow:hidden;padding:16px 0;border-block:0;animation:hue 16s linear infinite}
 .marquee .track{display:flex;width:max-content;animation:slide 26s linear infinite}
 .marquee .grp{display:inline-flex;align-items:center;font-family:var(--display);font-weight:700;font-size:clamp(19px,2.6vw,30px);letter-spacing:.02em;white-space:nowrap}
-.marquee .grp b{padding:0 18px;color:var(--creme);font-weight:700}
-.marquee .grp .st{color:var(--gold);font-size:.8em}
-@keyframes slide{to{transform:translateX(-50%)}}
+.marquee .grp b{padding:0 18px;color:#fff;font-weight:700;text-shadow:0 1px 2px rgba(0,0,0,.28)}
+.marquee .grp .st{color:#FFE6A6;font-size:.8em}
+@keyframes slide{to{transform:translateX(-50%)}}@keyframes hue{to{background-position:220% 0}}
 
 /* UMZUG */
-.umzug{background:radial-gradient(70vmax 50vmax at 80% -10%,rgba(224,39,126,.34),transparent 60%),radial-gradient(60vmax 50vmax at 5% 120%,rgba(17,194,180,.32),transparent 60%),var(--aubergine);color:var(--creme);text-align:center;overflow:hidden}
+.umzug{background:radial-gradient(70vmax 48vmax at 82% -12%,rgba(224,39,126,.13),transparent 60%),radial-gradient(58vmax 46vmax at 2% 116%,rgba(17,194,180,.14),transparent 60%),var(--creme2);color:var(--ink);text-align:center;overflow:hidden}
 .umzug .wrap{position:relative;z-index:1;max-width:780px}
-.umzug .eyebrow{color:var(--gold)}
-.umzug h2{color:#fff;font-size:var(--h2);margin:.12em 0 .4em}
-.umzug p{margin-inline:auto;color:#E9D8E0}
+.umzug .eyebrow{color:var(--magenta)}
+.umzug h2{color:var(--ink);font-size:var(--h2);margin:.12em 0 .4em}
+.umzug p{margin-inline:auto;color:var(--ink-soft)}
 .umzug .star{position:absolute;pointer-events:none;opacity:.85;z-index:0}
-.adresskarte{margin:28px auto 0;display:inline-flex;flex-direction:column;gap:5px;background:rgba(255,255,255,.07);border:2px dashed rgba(228,177,76,.5);border-radius:var(--r-lg);padding:22px 36px}
-.adresskarte .k{font-family:var(--display);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-.adresskarte .a{font-family:var(--display);font-weight:700;font-size:clamp(22px,3vw,32px);color:#fff;line-height:1.15}
-.umzug .btn-light{margin-top:26px}
+.adresskarte{margin:28px auto 0;display:inline-flex;flex-direction:column;gap:5px;background:var(--paper);border:2px dashed var(--petrol);box-shadow:6px 7px 0 var(--magenta);border-radius:var(--r-lg);padding:22px 36px}
+.adresskarte .k{font-family:var(--display);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--magenta-deep)}
+.adresskarte .a{font-family:var(--display);font-weight:700;font-size:clamp(22px,3vw,32px);color:var(--ink);line-height:1.15}
+.umzug .btn-primary{margin-top:26px}
 
 /* SORTIMENT */
 .karten{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,30px);margin-top:46px}
@@ -231,8 +231,8 @@ picture{display:block}
 /* REVEAL */
 .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .js .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1!important;transform:none!important;transition:none}.disco-beams,.ball::after,.spark{animation:none!important}.marquee .track{animation:none!important}}
-.foto .reveal{opacity:1!important;transform:none!important}.foto .disco-beams,.foto .ball::after,.foto .spark{animation:none!important}.foto .marquee .track{animation:none!important}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1!important;transform:none!important;transition:none}.disco-beams,.ball::after,.spark,.marquee{animation:none!important}.marquee .track{animation:none!important}}
+.foto .reveal{opacity:1!important;transform:none!important}.foto .disco-beams,.foto .ball::after,.foto .spark,.foto .marquee{animation:none!important}.foto .marquee .track{animation:none!important}
 
 @media (max-width:900px){
   .navlinks{position:fixed;inset:0;background:var(--aubergine);flex-direction:column;justify-content:center;gap:26px;transform:translateX(100%);transition:transform .4s var(--ease);z-index:40}
@@ -307,7 +307,7 @@ picture{display:block}
       <span class="k">★ So findest du uns ★</span>
       <span class="a">Vordere Mühlgasse 189<br>86899 Landsberg am Lech</span>
     </div>
-    <div><a class="btn btn-light" href="#anfahrt">Auf der Karte ansehen <span class="ar">→</span></a></div>
+    <div><a class="btn btn-primary" href="#anfahrt">Auf der Karte ansehen <span class="ar">→</span></a></div>
   </div>
 </section>
 
