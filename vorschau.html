@@ -1,0 +1,280 @@
+<!doctype html>
+<!-- MOCCA · vorschau.html · „Hallo Marion" (KALT-Demo) · Lechcode · noindex -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Für Marion — eine kleine Überraschung 🌅 | Lechcode</title>
+<meta name="theme-color" content="#271528">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Lechcode">
+<meta property="og:url" content="https://lechcode.github.io/mocca-vorschau/vorschau.html">
+<meta property="og:title" content="Hallo Marion 🌅 — eine Überraschung für MOCCA">
+<meta property="og:description" content="Wir haben deine Website mal ganz neu gedacht — schneller, schöner, mit deinen Bildern. Schau in Ruhe rein.">
+<meta property="og:image" content="https://lechcode.github.io/mocca-vorschau/assets/og-vorschau.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lechcode.github.io/mocca-vorschau/assets/og-vorschau.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23271528'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F2913D'/%3E%3C/svg%3E">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/shrikhand-400.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-400.woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --creme:#FBF1DF;--creme2:#F8E7C8;--paper:#FFFBF3;
+  --aubergine:#271528;--ink:#2A1622;--soft:#6E5360;
+  --terracotta:#D9542B;--terra-deep:#A53A18;--mandarine:#F2913D;
+  --magenta:#C2407A;--petrol:#1E6E63;--gold:#E4B14C;--gold-deep:#8C610F;
+  --line:rgba(42,22,34,.14);--line-strong:rgba(42,22,34,.24);
+  --display:'Space Grotesk',Arial,sans-serif;--head:'Shrikhand',Georgia,serif;
+  --body:'Inter','Inter Fallback',Arial,sans-serif;--script:'Caveat',cursive;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--creme);color:var(--ink);font-family:var(--body);line-height:1.66;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1040px;margin-inline:auto;padding-inline:clamp(20px,5vw,40px)}
+h1,h2,h3{font-family:var(--head);font-weight:400;line-height:1.05;color:var(--ink)}
+p{max-width:62ch}
+a{color:var(--terra-deep)}
+.sec{padding-block:clamp(46px,7vw,84px)}
+.btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--display);font-weight:700;font-size:16px;padding:16px 30px;border-radius:999px;min-height:52px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s}
+.btn .ar{transition:transform .22s var(--ease)}.btn:hover .ar{transform:translateX(3px)}
+.btn-primary{background:linear-gradient(180deg,#F4A052,var(--terracotta));color:#2A1622;box-shadow:0 12px 26px -12px rgba(217,84,43,.7),inset 0 1px 0 rgba(255,228,190,.6)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--aubergine);color:var(--creme)}.btn-dark:hover{transform:translateY(-2px)}
+:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(194,64,122,.55);border-radius:8px}
+
+/* HERO / GRUSS */
+.gruss{position:relative;overflow:hidden;text-align:center;padding-top:clamp(76px,12vh,120px);padding-bottom:clamp(40px,6vw,70px);
+  background:radial-gradient(70vmax 48vmax at 82% -12%,rgba(194,64,122,.20),transparent 60%),radial-gradient(58vmax 46vmax at 2% 118%,rgba(30,110,99,.20),transparent 60%),linear-gradient(180deg,#FBD9A4,#FBF1DF 62%)}
+.eyebrow{font-family:var(--script);font-weight:700;font-size:clamp(26px,3vw,38px);color:var(--terra-deep);transform:rotate(-2deg);display:inline-block}
+.gruss h1{font-size:clamp(40px,7vw,82px);margin:.1em 0 .35em}
+.gruss h1 .pop{color:var(--terracotta)}
+.gruss p{font-size:clamp(17px,1.5vw,20px);color:var(--soft);max-width:50ch;margin:0 auto}
+.gruss .who{margin-top:18px;font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.04em;color:var(--aubergine)}
+.gruss .cta{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* SECTION HEAD */
+.kicker{font-family:var(--display);font-weight:700;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--magenta);display:block;margin-bottom:.5em}
+.sec h2{font-size:clamp(28px,4vw,44px);margin-bottom:.35em}
+.sec .lead{font-size:clamp(16px,1.4vw,18.5px);color:var(--soft);max-width:60ch}
+.center{text-align:center}.center .lead{margin-inline:auto}
+
+/* SLIDER */
+.slider{position:relative;max-width:980px;margin:34px auto 0;border-radius:18px;overflow:hidden;aspect-ratio:1000/625;cursor:ew-resize;border:3px solid var(--aubergine);box-shadow:8px 10px 0 var(--magenta);touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;display:block}
+.slider .alt{clip-path:inset(0 50% 0 0)}
+.slider .lab{position:absolute;top:12px;font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:6px 12px;border-radius:999px;z-index:3;pointer-events:none}
+.slider .lab-alt{left:12px;background:rgba(39,21,40,.82)}
+.slider .lab-neu{right:12px;background:var(--terracotta)}
+.slider .handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);z-index:2;pointer-events:none;box-shadow:0 0 0 1px rgba(39,21,40,.25)}
+.slider .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:#fff;z-index:3;pointer-events:none;display:grid;place-items:center;box-shadow:0 6px 16px -6px rgba(39,21,40,.6);color:var(--aubergine);font-weight:700}
+.hint{text-align:center;margin-top:14px;font-size:14px;color:var(--soft)}
+
+/* PHONES */
+.phones{display:flex;gap:clamp(16px,4vw,46px);justify-content:center;flex-wrap:wrap;margin-top:36px}
+.phone{width:min(46vw,230px)}
+.phone .frame{border:8px solid var(--aubergine);border-radius:30px;overflow:hidden;position:relative;aspect-ratio:460/810;background:#000;box-shadow:0 24px 50px -28px rgba(39,21,40,.6)}
+.phone .frame::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:46%;height:16px;background:var(--aubergine);border-radius:0 0 12px 12px;z-index:2}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:50% 0;display:block}
+.phone .cap{text-align:center;margin-top:12px;font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.04em}
+.phone.alt .cap{color:var(--soft)}.phone.neu .cap{color:var(--terra-deep)}
+.phones-note{text-align:center;margin-top:22px;font-size:14.5px;color:var(--soft)}
+
+/* WAS NEU */
+.neu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:32px}
+.nbox{background:var(--paper);border:2px solid var(--aubergine);border-radius:16px;padding:22px 24px;box-shadow:4px 5px 0 rgba(39,21,40,.9)}
+.nbox h3{font-family:var(--display);font-weight:700;font-size:17px;color:var(--aubergine);margin-bottom:6px;display:flex;align-items:center;gap:.5em}
+.nbox p{font-size:15px;color:var(--soft);max-width:none}
+.nbox .em{font-size:20px}
+
+/* ANSEHEN */
+.ansehen{background:radial-gradient(60vmax 44vmax at 80% -10%,rgba(242,145,61,.3),transparent 60%),var(--aubergine);color:var(--creme);text-align:center}
+.ansehen h2{color:#fff}.ansehen .lead{color:#E9D8E0}
+.ansehen .cta{margin-top:28px}
+
+/* PREIS */
+.preis{background:var(--creme2)}
+.preis-card{background:var(--paper);border:2px solid var(--aubergine);border-radius:22px;padding:clamp(26px,3.5vw,42px);box-shadow:8px 10px 0 var(--gold);max-width:760px;margin:30px auto 0;text-align:center}
+.preis .big{font-family:var(--head);font-weight:400;font-size:clamp(40px,7vw,72px);color:var(--terracotta);line-height:1}
+.preis .big small{font-family:var(--display);font-size:18px;color:var(--soft);font-weight:700;display:block;margin-top:6px}
+.preis .pflege{margin-top:18px;font-size:16px;color:var(--ink)}
+.preis .pflege b{color:var(--aubergine)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px;text-align:left}
+.steps .st{background:var(--creme);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.steps .st b{font-family:var(--display);color:var(--aubergine);font-size:14px}
+.steps .st p{font-size:13.5px;color:var(--soft);margin-top:4px;max-width:none}
+.kein{margin-top:20px;font-size:14px;color:var(--soft)}
+
+/* BRAUCHEN */
+.brauchen ul{list-style:none;margin-top:24px;display:grid;gap:12px;max-width:680px}
+.brauchen li{background:var(--paper);border:1px solid var(--line-strong);border-radius:14px;padding:15px 18px;font-size:15.5px;color:var(--ink);display:flex;gap:.7em}
+.brauchen li b{color:var(--aubergine)}
+.brauchen li .d{color:var(--terracotta);font-weight:700}
+
+/* LCBOOK */
+.lcbook{background:linear-gradient(180deg,#1d1810,#16130c);color:#f4ecdc;text-align:center;padding:clamp(54px,8vw,90px) clamp(20px,5vw,32px)}
+.lcbook .eb{font-family:ui-monospace,Menlo,monospace;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#e7b964;display:inline-flex;align-items:center;gap:8px;margin-bottom:14px}
+.lcbook .eb svg{width:18px;height:18px}
+.lcbook h2{font-family:var(--head);font-weight:400;color:#fbf5e8;font-size:clamp(27px,4vw,42px)}
+.lcbook p{color:#d9cdba;max-width:46ch;margin:14px auto 0;font-size:16px}
+.lcbook a{display:inline-flex;align-items:center;gap:11px;margin-top:28px;background:linear-gradient(180deg,#f0a85e,#e8923f);color:#2a1808;font-family:var(--display);font-weight:700;font-size:16.5px;padding:16px 32px;border-radius:999px;min-height:52px;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,220,170,.55),0 16px 30px -12px rgba(232,146,63,.6);transition:transform .26s var(--ease)}
+.lcbook a:hover{transform:translateY(-2px)}
+.lcbook a svg{width:20px;height:20px}
+.lcbook .note{margin-top:14px;font-size:12.5px;color:#9b8e79}
+
+/* FOOTER */
+.vfoot{background:#1c0f1e;color:#cdb9c6;text-align:center;padding:38px 20px;font-size:13.5px}
+.vfoot a{color:#e4b14c}
+.vfoot .made{color:#e4b14c;font-weight:600}
+@media (max-width:680px){.neu-grid,.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- GRUSS -->
+<header class="gruss">
+  <div class="wrap">
+    <span class="eyebrow">Hallo Marion 🌅</span>
+    <h1>Wir haben dir was <span class="pop">gebaut.</span></h1>
+    <p>Lenny &amp; Michael hier — wir bauen Websites für Landsberger Lieblingsläden. Dein MOCCA ist gerade umgezogen … da dachten wir, deine Seite hätte auch ein Upgrade verdient. Also haben wir's einfach mal gemacht. Ganz unverbindlich. 🤍</p>
+    <p class="who">Schau in Ruhe rein — du schuldest uns nichts.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="index.html">Deine neue Seite ansehen <span class="ar">→</span></a>
+      <a class="btn btn-dark" href="#vergleich">Erst den Vergleich</a>
+    </div>
+  </div>
+</header>
+
+<!-- VERGLEICH SLIDER -->
+<section class="sec center" id="vergleich">
+  <div class="wrap">
+    <span class="kicker">Vorher / Nachher</span>
+    <h2>Zieh den Regler.</h2>
+    <p class="lead">Links deine jetzige Seite, rechts der neue Entwurf. Gleiche Inhalte — nur neu erzählt, mit deinen Farben und Bildern.</p>
+    <div class="slider" id="slider" role="slider" aria-label="Vorher-Nachher-Vergleich" aria-valuenow="50" tabindex="0">
+      <img class="neu" src="assets/vergleich/neu-desktop.jpg" alt="Neuer Entwurf der MOCCA-Website" width="1000" height="625">
+      <img class="alt" id="altimg" src="assets/vergleich/alt-desktop.jpg" alt="Bisherige MOCCA-Website" width="1000" height="625">
+      <span class="lab lab-alt">Vorher</span>
+      <span class="lab lab-neu">Nachher</span>
+      <span class="handle" id="handle"></span>
+      <span class="knob" id="knob" aria-hidden="true">⇆</span>
+    </div>
+    <p class="hint">↔ Regler ziehen (oder Pfeiltasten)</p>
+  </div>
+</section>
+
+<!-- PHONES -->
+<section class="sec center" style="background:var(--creme2)">
+  <div class="wrap">
+    <span class="kicker">Und auf dem Handy?</span>
+    <h2>Da entscheidet sich's.</h2>
+    <p class="lead">Die meisten schauen vom Smartphone. Genau da soll MOCCA glänzen.</p>
+    <div class="phones">
+      <div class="phone alt">
+        <div class="frame"><img src="assets/vergleich/alt-mobile.jpg" alt="Bisherige Seite auf dem Handy" width="460" height="810"></div>
+        <div class="cap">Vorher</div>
+      </div>
+      <div class="phone neu">
+        <div class="frame"><img src="assets/vergleich/neu-mobile.jpg" alt="Neuer Entwurf auf dem Handy" width="460" height="810"></div>
+        <div class="cap">Nachher</div>
+      </div>
+    </div>
+    <p class="phones-note">Über 60 % aller Besuche kommen vom Smartphone <span style="color:#9a8a96">(StatCounter)</span>.</p>
+  </div>
+</section>
+
+<!-- WAS NEU -->
+<section class="sec">
+  <div class="wrap">
+    <span class="kicker">Was anders ist</span>
+    <h2>Klein erklärt.</h2>
+    <div class="neu-grid">
+      <div class="nbox"><h3><span class="em">🌅</span> Mit Charakter</h3><p>Ein Look, der zu dir und MOCCA passt — warm, eigen, „der absolut andere Laden". Kein Baukasten von der Stange.</p></div>
+      <div class="nbox"><h3><span class="em">📸</span> Deine echten Bilder</h3><p>Mantel, Schmuck, Schuhe, dein Laden — deine Fotos machen das Gefühl, nicht Stockbilder.</p></div>
+      <div class="nbox"><h3><span class="em">⚡</span> Blitzschnell &amp; mobil</h3><p>Lädt sofort, sieht auf jedem Handy gut aus — und kommt komplett ohne Cookie-Banner aus.</p></div>
+      <div class="nbox"><h3><span class="em">🍪</span> 0 Tracker, 0 Cookies</h3><p>Keine Google-Server, kein Tracking — datenschutzfreundlich by design. Ein echter Pluspunkt.</p></div>
+      <div class="nbox"><h3><span class="em">📍</span> Der Umzug gefeiert</h3><p>Die neue Altstadt-Adresse steht groß im Mittelpunkt — damit dich alle finden.</p></div>
+      <div class="nbox"><h3><span class="em">🛍️</span> Kommission erklärt</h3><p>Wie das Abgeben funktioniert — in drei klaren Schritten, einladend statt bürokratisch.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ANSEHEN CTA -->
+<section class="sec ansehen center">
+  <div class="wrap">
+    <h2>Am schönsten ist's live.</h2>
+    <p class="lead">Klick dich einmal durch — scroll, schau, fühl. Das ist deine Seite.</p>
+    <div class="cta"><a class="btn btn-primary" href="index.html">Deine neue Seite ansehen <span class="ar">→</span></a></div>
+  </div>
+</section>
+
+<!-- PREIS -->
+<section class="sec preis center">
+  <div class="wrap">
+    <span class="kicker">Falls es dir gefällt</span>
+    <h2>Was es kostet.</h2>
+    <p class="lead">Wir bauen gerade die ersten Websites für Landsberger Lieblingsläden — für die ersten zehn zu einem besonderen Startpreis.</p>
+    <div class="preis-card">
+      <div class="big">500 €<small>einmalig — komplett, inklusive Umzug auf deine Adresse</small></div>
+      <p class="pflege">Danach optional <b>19 €/Monat</b> Pflege (Änderungen per Nachricht, <b>monatlich kündbar</b>).</p>
+      <div class="steps">
+        <div class="st"><b>1 · Kurz reden</b><p>Ein lockeres Gespräch — was dir gefällt, was du dir wünschst.</p></div>
+        <div class="st"><b>2 · Feinschliff</b><p>Wir setzen deine Wünsche um und ergänzen die letzten Inhalte.</p></div>
+        <div class="st"><b>3 · Live gehen</b><p>Umzug auf deine Domain, Impressum &amp; Datenschutz fertig, sicher online.</p></div>
+      </div>
+      <p class="kein">Kein Risiko, kein Druck — wenn's nicht passt, war der Entwurf ein Geschenk. 🤍</p>
+    </div>
+  </div>
+</section>
+
+<!-- BRAUCHEN -->
+<section class="sec brauchen">
+  <div class="wrap">
+    <span class="kicker">Damit's perfekt wird</span>
+    <h2>Was wir noch von dir bräuchten.</h2>
+    <ul>
+      <li><span class="d">·</span><span><b>Ein, zwei Fotos vom neuen Laden</b> — außen &amp; innen, damit die Seite richtig „nach dir" aussieht.</span></li>
+      <li><span class="d">·</span><span><b>Die genauen Öffnungszeiten</b> am neuen Standort (wir haben erstmal die alten eingetragen).</span></li>
+      <li><span class="d">·</span><span><b>Magst du Instagram verlinken?</b> Dann bauen wir's gleich ein.</span></li>
+      <li><span class="d">·</span><span><b>Kurz zu den Bildern:</b> ob wir deine Fotos verwenden dürfen (Fotograf:in o. k.?).</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- LCBOOK -->
+<section class="lcbook">
+  <span class="eb"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#e7b964" stroke-width="2"/><path d="M9 13c2-2 4-2 6 0" stroke="#e7b964" stroke-width="2" stroke-linecap="round"/></svg>Lechcode · Landsberg</span>
+  <h2>Lust auf ein kurzes Gespräch, Marion?</h2>
+  <p>Such dir einfach einen Termin aus — etwa 30 Minuten, ganz unverbindlich. Wir freuen uns auf dich.</p>
+  <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1vusFYCV6O45i109a0J5ruEFtWCT7iFsq5t4Mb2KvQmNhdkMtlddml9dx5V2jButjV2SUGapFg?gv=true" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4.5" width="18" height="16" rx="3" stroke="#2a1808" stroke-width="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4" stroke="#2a1808" stroke-width="2" stroke-linecap="round"/></svg>
+    Termin aussuchen
+  </a>
+  <p class="note">Öffnet Lennys Google-Kalender in einem neuen Tab. Diese Seite bleibt komplett cookiefrei.</p>
+</section>
+
+<footer class="vfoot">
+  <p>Unverbindliche Design-Vorschau für MOCCA · handgebaut von <span class="made">Lechcode</span>, Landsberg am Lech · <a href="mailto:info@lechcode.de">info@lechcode.de</a></p>
+</footer>
+
+<script>
+(function(){
+  var slider=document.getElementById('slider'),alt=document.getElementById('altimg'),
+      handle=document.getElementById('handle'),knob=document.getElementById('knob'),drag=false;
+  function set(p){p=Math.max(2,Math.min(98,p));alt.style.clipPath='inset(0 '+(100-p)+'% 0 0)';handle.style.left=p+'%';knob.style.left=p+'%';slider.setAttribute('aria-valuenow',Math.round(p))}
+  function fromX(x){var r=slider.getBoundingClientRect();set((x-r.left)/r.width*100)}
+  slider.addEventListener('pointerdown',function(e){drag=true;try{slider.setPointerCapture(e.pointerId)}catch(_){}finally{}fromX(e.clientX)});
+  slider.addEventListener('pointermove',function(e){if(drag)fromX(e.clientX)});
+  slider.addEventListener('pointerup',function(){drag=false});
+  slider.addEventListener('pointercancel',function(){drag=false});
+  slider.addEventListener('keydown',function(e){var c=parseFloat(slider.getAttribute('aria-valuenow'))||50;if(e.key==='ArrowLeft'){set(c-4);e.preventDefault()}if(e.key==='ArrowRight'){set(c+4);e.preventDefault()}});
+  set(50);
+})();
+</script>
+</body>
+</html>
